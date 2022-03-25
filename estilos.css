@@ -1,0 +1,54 @@
+#mitextarea {
+  width: 400px; 
+  height: 300px;
+    text-align: left;
+
+  
+}
+.tarjetacontenido {
+  width: 400px; 
+  height: 300px;
+  line-height: normal;  /* Tiene el mismo valor que height */
+  color: #333; 
+  position: relative;
+  background: gray;
+  text-align: left;
+  border: 1px solid #333;
+}
+.tarjeta-texto {
+  display: inline-block;  /* Nos permite aplicarle el vertical-align */
+  vertical-align: middle; /* Aliniamos verticalmente al centro */
+  line-height: 1.3em;     /* El texto que vayamos escribiendo, tendrá este espaciado */
+  text-align: left;     /* Texto saldrá centrado horizontalmente */
+}
+.mitexto {
+  font-family: 'arial', serif; 
+  font-size: 14pt;
+}
+
+p {
+ margin-top:50px;
+}
+span.chunk {
+ position:relative;
+}
+span.chunk:before {
+  content:attr(data-chord);
+  position:absolute;
+  top:-15px;
+}
+
+
+body {
+  white-space: pre-line;
+}
+
+em {
+  font-family: 'arial'; 
+  line-height: 2.3em;
+  position: relative;
+  color: red;
+  top: -1em;
+  display: inline-block;
+  width: 0;
+}
