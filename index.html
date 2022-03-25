@@ -6,6 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-  <h1>hola</h1>
+<textarea id="mitextarea" style="height:200px ;width:500px" onkeyup="getChords()">Cuan grande [D]es Dios
+</textarea>
+<input type="button" value="Obtener texto entre comillas" onclick="getChords()">
+<div id="mostrartarjeta" class="tarjeta-texto kalamtexto">
+<script>
+	function getChords() {
+		let texto = $("#mitextarea").val();
+		$("#mostrartarjeta").html(texto.replace(/\[(.*?)\]/g, '<em>$1</em>'));
+	}
+//http://jsfiddle.net/4kYQZ/2/
+</script>
 </body>
 </html>
